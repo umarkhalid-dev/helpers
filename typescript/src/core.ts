@@ -48,3 +48,26 @@ const arr2: (number | string)[] = [1, 2, 3, 4, 5, 'umar']; // Union types
 
 // Type Interference
 // When the compiler assign types by itself with respect the variable and its value
+
+// Literal types
+const literlType: 'abcd' | 'efgh' = 'abcd';
+
+// Type Aliases
+type Combinebale = number | string;
+
+// FUnction return type
+function sum(a: number, b: number) {
+  console.log('Abc');
+  return a + b;
+}
+
+// void
+// If nothing is returned from the function
+
+// unknown type (can hold any value) little stricted than any
+let user: unknown;
+
+// never type (never return anything)
+function generateError(error: string, code: number): never {
+  throw { error, code };
+}
